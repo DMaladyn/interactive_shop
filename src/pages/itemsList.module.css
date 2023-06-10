@@ -1,0 +1,12 @@
+.items {
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px;
+  margin: auto;
+  
+}
+
+.content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 490px 1030px 400px;
+}

@@ -1,0 +1,25 @@
+.item {
+  width: 250px;
+  height: 450px;
+  border: 2px black solid;
+  margin-bottom: 10px;
+}
+
+.price {
+  text-align: right;
+  margin-right: 3px;
+  color: red;
+}
+
+.picture {
+  width: 250px;
+  height: 350px;
+}
+
+.name {
+  margin-left: 3px;
+}
+
+.description {
+  margin-left: 3px;
+}

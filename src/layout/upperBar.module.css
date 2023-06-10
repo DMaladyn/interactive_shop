@@ -1,0 +1,25 @@
+.header {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  font-size: 3vh;
+  font-weight: bold;
+  color: black;
+}
+
+a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(100, 94, 94);
+}
+
+.shopCart {
+  align-items: center;
+  align-self: center;
+}
