@@ -1,0 +1,81 @@
+.content {
+  font-size: 22px;
+  font-weight: 500;
+
+  margin-top: 27px;
+  margin-right: 50px;
+  padding-left: 45%;
+  padding-top: 30px;
+
+  background-image: linear-gradient(to right, #fdebde, rgb(248, 244, 239));
+  border-right: 2px solid black;
+
+  min-height: calc(100vh - 87px);
+}
+
+fieldset {
+  border: none;
+}
+
+.header {
+  color: #000099;
+}
+
+.categories {
+  margin-left: -20px;
+}
+
+.categories li {
+  font-size: 18px;
+  font-weight: 500;
+
+  list-style: none;
+}
+
+.price {
+  width: 50px;
+}
+
+.search {
+  width: 40%;
+  margin-left: 20%;
+}
+
+.dollar {
+  position: relative;
+  bottom: -3px;
+}
+
+.invalid {
+  font-family: "Dysprosium", sans-serif;
+  font-size: 15px;
+  color: red;
+  /*   animation: glitch-animation 2s infinite; */
+}
+
+/* @keyframes glitch-animation {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-5px, 5px);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translate(5px, -5px);
+    opacity: 0.6;
+  }
+  60% {
+    transform: translate(-10px, 10px);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translate(5px, -5px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(5px, -5px);
+    opacity: 1;
+  }
+} */

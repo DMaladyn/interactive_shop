@@ -1,0 +1,29 @@
+.items {
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 383px 1030px 490px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.empty a {
+  margin-right: 8px;
+  color: red;
+  font-weight: bold;
+}
+
+.empty a:hover {
+  color: #e60000;
+}

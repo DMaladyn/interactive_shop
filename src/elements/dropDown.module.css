@@ -1,0 +1,19 @@
+.dropdown {
+  background-color: #fbfbfb;
+  width: 100vw;
+  margin-left: -20vw;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  align-items: center;
+
+  border-bottom: 2px solid black;
+}
+
+.links {
+  margin-left: 20vw;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  font-size: 14px;
+}

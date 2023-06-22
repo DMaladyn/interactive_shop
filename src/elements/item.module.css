@@ -1,8 +1,11 @@
 .item {
-  width: 250px;
+  width: 240px;
   height: 450px;
-  border: 2px black solid;
+  /*   border: 2px black solid; */
   margin-bottom: 10px;
+  background-image: linear-gradient(#f0dfc7 50%, rgb(248, 244, 239));
+  /*   background-image: radial-gradient(#f0dfc7, rgb(248, 244, 239)); */
+  border-radius: 20px;
 }
 
 .price {
@@ -12,14 +15,23 @@
 }
 
 .picture {
-  width: 250px;
+  width: 240px;
   height: 350px;
+  object-fit: cover;
 }
 
 .name {
   margin-left: 3px;
+  font-weight: bold;
 }
 
 .description {
   margin-left: 3px;
+}
+
+.amount {
+  margin-top: -20px;
+  margin-right: 3px;
+  font-weight: 500;
+  text-align: right;
 }

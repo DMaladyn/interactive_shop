@@ -1,7 +1,7 @@
 import classes from "./main.module.css";
 
 function Main() {
-  return <div>it is main page</div>;
+  return <div className={classes.main}>it is main page</div>;
 }
 
 export default Main;

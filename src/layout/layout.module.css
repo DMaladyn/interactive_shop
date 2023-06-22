@@ -1,0 +1,7 @@
+.upperBar {
+  margin-top: -30px;
+  position: fixed;
+  width: 100%;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #52527a;
+}

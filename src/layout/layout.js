@@ -4,7 +4,9 @@ import UpperBar from "./upperBar";
 function Layout(props) {
   return (
     <div>
-      <UpperBar />
+      <div className={classes.upperBar}>
+        <UpperBar />
+      </div>
       <main className={classes.items}>{props.children}</main>
     </div>
   );
