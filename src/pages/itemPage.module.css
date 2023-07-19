@@ -1,0 +1,87 @@
+h1 {
+  margin-bottom: 0px;
+}
+
+.content {
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 50px;
+  width: 60%;
+}
+
+.mainPicture {
+  width: 400px;
+  max-height: 600px;
+}
+
+.secondaryPictures {
+  margin-top: 10px;
+
+  width: 450px;
+
+  display: inline-flex;
+  column-gap: calc(80px / 3);
+}
+
+.secondaryPicture {
+  width: 80px;
+}
+
+.secondaryPicture:hover {
+  cursor: pointer;
+}
+
+.picturesSection {
+  width: 450px;
+}
+
+.mainSection {
+  display: flex;
+  column-gap: 100px;
+  row-gap: 40px;
+}
+
+.price {
+  color: #e60000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.descriptionSection {
+  margin-left: 20px;
+
+  width: 50%;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.scrollLeft,
+.scrollRight {
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.scrollLeft {
+  margin-left: -50px;
+
+  display: inline;
+  width: 25px;
+}
+
+.scrollRight {
+  width: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainSection {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .picturesSection {
+    margin: auto;
+  }
+}

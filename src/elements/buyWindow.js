@@ -4,6 +4,9 @@ import classes from "./buyWindow.module.css";
 import { Button } from "react-bootstrap";
 
 function BuyWindow(props) {
+  /* It is a window where you can finalize purchase or clear your cart
+  ir also displays your total amount to pay and specific items in cart */
+
   function clear() {
     localStorage.setItem("cart", JSON.stringify({ filler: 1 }));
     props.clear();

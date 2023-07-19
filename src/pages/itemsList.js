@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 import classes from "./itemsList.module.css";
 import Item from "../elements/item";
@@ -10,13 +11,20 @@ function List(props) {
 
   let items = [];
 
-  const [categories, setCategories] = useState([props.type]);
+  const params = useParams();
+
+  console.log(params.category);
+
+  const [categories, setCategories] = useState([params.category]);
+
+  console.log(categories);
 
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(999);
 
-  useEffect(() => setCategories([props.type]), [props.type]);
+  useEffect(() => setCategories([params.category]), [params.category]);
 
+  /* creates array of <Item /> components from items in shop based on selected categories and price range */
   if (categories[0] != undefined) {
     for (
       let i = 0;
@@ -36,7 +44,8 @@ function List(props) {
             name={props.data[i].name}
             description={props.data[i].description}
             price={props.data[i].price}
-            page={props.data[i].page}
+            type={props.data[i].type}
+            /* page={props.data[i].page} */
             place="list"
           />
         );
@@ -57,13 +66,16 @@ function List(props) {
             name={props.data[i].name}
             description={props.data[i].description}
             price={props.data[i].price}
-            page={props.data[i].page}
+            type={props.data[i].type}
+            /* page={props.data[i].page} */
             place="list"
           />
         );
       }
   }
 
+  /* adjusts values of maxPrice, minPrice and categories 
+  is called from <SearchBar /> */
   function search(categories, searchMinPrice, searchMaxPrice) {
     setCategories(categories);
 

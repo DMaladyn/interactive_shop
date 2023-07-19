@@ -9,12 +9,16 @@ import { Link } from "react-router-dom";
 function Cart(props) {
   let items = [];
 
+  /* calls for object stored in localstorage with key "cart" and using parse turns it into object we can use here */
   let cart = JSON.parse(localStorage.getItem("cart"));
 
   let sum = 0;
 
   const [ids, setIds] = useState(Object.keys(cart));
 
+  /* pushes item with id ids[0] to an array items
+  it only does something when length of ids is > 1 because there will always be item called filler and it will 
+  always be the last one */
   if (ids.length > 1) {
     items.push(
       <Item
@@ -35,6 +39,7 @@ function Cart(props) {
     sum += props.data[ids[0]].price * cart[ids[0]];
   }
 
+  /* pushes items with ids from "ids" excluding extremes */
   for (let i = 1; i < ids.length - 1; i++) {
     if (ids[i] !== "filler") {
       items.push(
@@ -58,6 +63,7 @@ function Cart(props) {
 
   const [sumState, setSumState] = useState(sum);
 
+  /* removes id of item that is being removed from cart from "ids" and decreses total price of items in cart */
   function remove(id) {
     for (let i = 0; i < ids.length; i++) {
       if (id === ids[i]) {
@@ -68,10 +74,12 @@ function Cart(props) {
     }
   }
 
+  /* decreses total price of items in cart by price of item which amount has been decreased */
   function decrease(id) {
     setSumState(sumState - props.data[id].price);
   }
 
+  /* removes all items from cart */
   function clear() {
     setIds(["filler"]);
   }
